@@ -10,12 +10,6 @@ Software:
 
 Operating systems:
     macOS 10.15.2 (Catalina)
-
-Hardware:
-    Hardware model: MacBook Pro (13-inch)
-    Processor: 3,5 GHz Dual-Core Intel Core i7
-    Memory: 16 GB
-    Graphics: Intel Iris Plus Graphics 650
 ```
 ## Install
 
