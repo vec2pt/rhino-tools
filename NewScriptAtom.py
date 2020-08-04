@@ -4,6 +4,8 @@ from os import popen
 
 
 def NewScriptAtom():
+    """Create a new Python script in Atom.app for Rhino."""
+    
     file_name = rs.SaveFileName ("Save", "Text Files (*.py)|*.py|All Files (*.*)|*.*||")
     if not file_name:return
 
@@ -23,7 +25,7 @@ import rhinoscriptsyntax as rs
 def new_script():
     pass
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
     new_script()"""
 
     with open(file_name, "w+") as f:

@@ -4,12 +4,16 @@ import json
 
 
 def hex_to_rbg(colore):
+    """RGB to Hex color conversion."""
+
     colore = colore.lstrip('#')
     rgb = tuple(int(colore[i:i+2], 16) for i in (0, 2, 4))
     return rgb
 
 
 def set_layer_properties(layer, properties):
+    """Set Rhino layer properties."""
+
     rs.LayerVisible(layer, properties.get("LayerVisible"))
     rs.LayerLocked(layer, properties.get("LayerLocked"))
     rs.LayerColor(layer, hex_to_rbg(properties.get("LayerColor")))
@@ -20,6 +24,8 @@ def set_layer_properties(layer, properties):
 
 
 def ImportLayersStructure():
+    """Import layers structure from json file."""
+
     file_name = rs.OpenFileName("Open", "Text Files (*.json)|*.json|All Files (*.*)|*.*||")
     if not file_name:return
 

@@ -4,12 +4,16 @@ import json
 
 
 def rgb_to_hex(colore):
+    """RGB to Hex color conversion."""
+
     r = rs.ColorRedValue(colore)
     g = rs.ColorGreenValue(colore)
     b = rs.ColorBlueValue(colore)
     return '#%02x%02x%02x' % (r, g ,b)
 
 def get_layer_properties(layer):
+    """Get Rhino layer properties."""
+
     return {
         "LayerVisible" : rs.LayerVisible(layer),
         "LayerLocked" : rs.LayerLocked(layer),
@@ -22,6 +26,8 @@ def get_layer_properties(layer):
 
 
 def ExportLayersStructure():
+    """Export layers structure to json file."""
+
     file_name = rs.SaveFileName ("Save", "Text Files (*.json)|*.json|All Files (*.*)|*.*||")
     if not file_name:return
 

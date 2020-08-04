@@ -4,13 +4,15 @@ import json
 
 
 def IsolateLayers():
+    """Isolate layers by hiding layers."""
+
     file_name = rs.DocumentName()
     file_path = rs.DocumentPath()
 
     # Select objects
     input_obj = rs.SelectedObjects()
     if not input_obj:
-	    input_obj = rs.GetObjects("Select objects on layers to isolate")
+        input_obj = rs.GetObjects("Select objects on layers to isolate")
     if not input_obj:return
 
     # Get all layers names
