@@ -6,7 +6,7 @@ from shutil import copyfile
 
 
 def SaveCopy():
-    """Save a copy of the current Rhino file.""""
+    """Save a copy of the current Rhino file."""
 
     date_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 
