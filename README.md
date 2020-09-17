@@ -1,6 +1,6 @@
 # rhino_tools
 
-A series of simple scripts for [Rhinoceros 3D](https://www.rhino3d.com).
+A series of simple scripts for [Rhino 3D](https://www.rhino3d.com).
 
 
 ## Installation
