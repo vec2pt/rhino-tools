@@ -24,7 +24,7 @@ def set_layer_properties(layer, properties):
 
 
 def ImportLayersStructure():
-    """Import layers structure from json file."""
+    """Import layers settings into the current document from a json file."""
 
     file_name = rs.OpenFileName("Open", "Text Files (*.json)|*.json|All Files (*.*)|*.*||")
     if not file_name:return

@@ -26,7 +26,7 @@ def get_layer_properties(layer):
 
 
 def ExportLayersStructure():
-    """Export layers structure to json file."""
+    """Save layers settings to a json file."""
 
     file_name = rs.SaveFileName ("Save", "Text Files (*.json)|*.json|All Files (*.*)|*.*||")
     if not file_name:return

@@ -4,8 +4,8 @@ from os import popen
 
 
 def EditScriptAtom():
-    """The EditScriptAtom command edits a Python script in Atom.app."""
-    
+    """Edit a Python script in Atom.app."""
+
     file_name = rs.OpenFileName("Open")
 
     if file_name is None:
