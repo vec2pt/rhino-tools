@@ -25,7 +25,7 @@ A series of simple scripts for [Rhinoceros 3D](https://www.rhino3d.com).
 ```
 ## Usage
 
-- **EditScriptAtom.py** - Edit a Python script in Atom.app.
+- **EditScriptAtom.py** - Edit a Python script in Atom.app. (macOS)
 - **ExportLayersStructure.py** - Save layers settings to a json file.
 - **FilamentCalculator.py** - 3D Printing filament length, weight, volume calculator.
 - **ImportLayersStructure.py** - Import layers settings into the current document from a json file.
