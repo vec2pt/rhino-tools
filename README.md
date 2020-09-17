@@ -19,10 +19,10 @@ A series of simple scripts for [Rhino 3D](https://www.rhino3d.com).
     ```
 
 2. Run script via command:
-```
-! _-RunPythonScript ScriptName
+    ```
+    ! _-RunPythonScript ScriptName
+    ```
 
-```
 ## Usage
 
 - **EditScriptAtom.py** - Edit a Python script in Atom.app. (macOS)
