@@ -5,7 +5,7 @@ from os import popen
 
 def NewScriptAtom():
     """Create a new Python script in Atom.app for Rhino."""
-    
+
     file_name = rs.SaveFileName ("Save", "Text Files (*.py)|*.py|All Files (*.*)|*.*||")
     if not file_name:return
 
@@ -15,7 +15,10 @@ def NewScriptAtom():
 # Rhinoceros
 import rhinoscriptsyntax as rs
 # import scriptcontext as sc
+# import Rhino.DocObjects as rd
+# import Rhino.Geometry as rg
 # import Rhino as RH
+
 
 # Grasshopper
 # import Grasshopper as GH
